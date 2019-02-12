@@ -13,8 +13,8 @@
 library("bain")
 
 #read in data
-data <- read.table("data.txt", header = TRUE)
-# data <- read.table(file = "https://raw.githubusercontent.com/fayetteklaassen/gpbf/master/data.txt", header = TRUE)
+# data <- read.table("data.txt", header = TRUE) # if local data available
+data <- read.table(file = "https://raw.githubusercontent.com/fayetteklaassen/gpbf/master/data.txt", header = TRUE)
 # Determine the number of unique ppnrs = the number of cases
 names(data)
 # [1] "ppnr"           "TimePerception" "Valence"        "Arousal"       
