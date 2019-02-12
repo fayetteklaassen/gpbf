@@ -1,0 +1,17 @@
+---
+title: "Tables chapter"
+author: "Fayette"
+date: "11 februari 2019"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE}
+load("results.RData")
+knitr::kable(cbind("ID" = 1:29, output), digits = 2, caption = "Table 1. Individual Bayes factors")
+
+knitr::kable(gpout$GPBF, digits = 3, caption = "Table 2. Aggregated Bayes factors")
+```
